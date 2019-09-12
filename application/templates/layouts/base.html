@@ -1,0 +1,35 @@
+{% load static %}
+{% load bootstrap %}
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %} Projet 1 {% endblock %}</title>
+	<meta nema="viewport">
+	<link rel="stylesheet" type="text/css"
+	href="{% static 'application/vendor_bootstrap/bootstrap/css/bootstrap.min.css'%}">
+	<!-- for material style -->
+	<link rel="stylesheet" type="text/css" href="{% static 'application/css/material.indigo-blue.min.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'application/css/styles.css'%}">
+	{% block stylesheets %} {%endblock%}
+</head>
+<body>
+	{% block nav %} {%endblock%}
+	<div class="container">
+		{% block content %} {%endblock%}
+	</div>
+	{% block footer %} {%endblock%}
+	<!-- Bootstrap core JavaScript -->
+	
+	<!-- veuillez respecter l'odre des declarations des sripts -->
+	<script src="{% static 'application/vendor_bootstrap/jquery/jquery.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'application/js/jquery-3.4.1.min.js' %}"></script>
+	<script src="{% static 'application/vendor_bootstrap/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'application/vendor_bootstrap/bootstrap/js/bootstrap.min.js' %}"></script>
+	<!-- for material style -->
+	<script type="text/javascript" src="{% static 'application/js/material.min.js' %}"></script>
+	{% block javascripts %} {%endblock%}
+</body>
+</html>

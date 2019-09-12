@@ -1,0 +1,22 @@
+{% extends 'app1/layouts/base.html' %}
+
+{% block content %} 
+
+{% if personnes_list %}
+    <ul>
+    {% for personne in personnes_list %}
+    <!-- app1:detail => app1 c'est le namespace de l'application qui est app1, celui-ci est défini dans url.py, 
+    	personne.id => paramètre de l'uri --> 
+       <a href="{% url 'app1:update' personne.id %}"> <li> {{ personne.nom }}</li></a>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No person avalaible.</p>
+{% endif %}
+
+<a href="{% url 'app1:create' %}"> create new personne</a>
+
+{%endblock%}
+
+
+

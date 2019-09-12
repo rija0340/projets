@@ -1,0 +1,54 @@
+<nav>
+  <div class="row nav_accueil">
+    <div class="col-lg-3">
+      <div class="card  mdl-shadow--4dp">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Polls</h5>
+          <p class="card-text">
+            Application pour vote, 
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href=" {% url 'polls:index' %}" class="btn btn-primary">voir l'application</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="card  mdl-shadow--4dp">
+        <div class="card-body">
+          <h5 class="card-title">CRUD</h5>
+          <p class="card-text">CRUD élémentaire</p>
+          <div class="d-flex justify-content-center">
+            <a href=" {% url 'app1:list' %}" class="btn btn-primary">voir l'application</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 ">
+      <div class="card  mdl-shadow--4dp">
+        <div class="card-body">
+          <h5 class="card-title">Blog</h5>
+          <p class="card-text">Login, register, Crud, pdf, pagination</p>
+          <div class="d-flex justify-content-center">
+            <a href=" {% url 'blog:index' %}" class="btn btn-primary">voir l'application</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 ">
+      <div class="card  mdl-shadow--4dp">
+        <div class="card-body">
+          <h5 class="card-title">PDF</h5>
+          <p class="card-text">Generation de pdf</p>
+          <div class="d-flex justify-content-center">
+            <a href=" {% url 'generatepdf:index' %}" class="btn btn-primary">voir l'application</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

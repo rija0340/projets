@@ -1,0 +1,11 @@
+{% extends 'app1/layouts/base.html' %}
+
+{% block content %} 
+
+<form method="post">
+	{% csrf_token %}
+	<h2>Are you sure you want to remove {{personne.nom}}</h2>
+	<button type="submit"> Confirm </button>
+</form>
+
+{%endblock%} 

@@ -1,0 +1,18 @@
+{% extends 'blog/layouts/base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %} 
+
+<div class="row justify-content-center">
+	<div class="col-6">
+		<h1 class="text-center">Authentification</h1>
+		<form method="post" >
+			{%csrf_token%}
+			{{form|crispy}}
+			<button type="submit" class="btn btn-primary">Log in</button>
+		</form>
+	</div>
+</div>
+
+{%endblock%} 

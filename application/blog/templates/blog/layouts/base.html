@@ -1,0 +1,27 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block title %} 
+Blog
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{% static 'application/css/modern-business.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'application/blog/css/blog.css' %}">
+{% endblock %}
+
+{% block nav %}
+{%include 'blog/layouts/nav.html'%}
+{%endblock%} 
+
+{% block content %} 
+
+{%endblock%}
+{% block javascripts %}
+<script type="text/javascript" src="{% static 'application/blog/js/blog.js' %}"></script>
+
+{%endblock%} 
+{% block footer %}
+{%include 'blog/layouts/footer.html'%}
+{%endblock%} 
+

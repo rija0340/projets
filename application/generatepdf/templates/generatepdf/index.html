@@ -1,0 +1,11 @@
+<h1>page de generate pdf</h1>
+<a href="{% url 'generatepdf:renderpdf' %}">generate pdf</a>
+
+{% for aut in auteurs %}
+	<p>nom : {{aut.user.username}}</p>
+	<p>photo : </p> <img class="card-img-top" src=/{{aut.pdp}} alt="Card image cap">
+{% endfor %}
+
+
+{{request.user.username}}
+

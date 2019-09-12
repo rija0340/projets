@@ -1,0 +1,17 @@
+{% extends 'blog/layouts/base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %} 
+<div>
+	<h2 class="text-center">Exemple formulaire</h2>
+</div>
+<div class="row d-flex justify-content-center" style="padding: 10px;">
+<div class="col-6">
+	{% crispy form %}
+</div>
+</div>
+
+{%endblock%} 
+
+

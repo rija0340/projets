@@ -1,0 +1,16 @@
+{% extends 'app1/layouts/base.html' %}
+{% block content %} 
+
+<h1>New/update a personne</h1>
+
+<form method="POST">
+	{%csrf_token%}
+	{{form}}
+	<button type="submit">save</button>
+</form>
+
+{% if personne %}
+	<a href="{% url 'app1:delete' personne.id %}"> delete</a> 
+{% endif %}
+
+{%endblock%}
